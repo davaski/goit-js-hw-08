@@ -11,4 +11,3 @@ const onPlay = function (data) {
 };
 player.on('timeupdate', throttle(onPlay, 1000));
 player.setCurrentTime(JSON.parse(localStorage.getItem(CURRENT_KEY)) || 0);
-console.log('hello');
